@@ -72,7 +72,7 @@ class StructuredList extends React.Component {
       return (
       <div className="oi-structured-list">
         <div className="oi-structured-list-header">
-          <span className="oi-structured-list-header-label-name">Name</span>
+          <span className="oi-structured-list-header-label-name">Person</span>
           <span className="oi-structured-list-header-label-company">Company</span>
           <span className="oi-structured-list-header-label-role">Role</span>
           <span className="oi-structured-list-header-label-role">Time</span>

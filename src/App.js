@@ -10,7 +10,6 @@ function App() {
     <main className="oi-wrapper">
       <Hero/>
       <StructuredList/>
-      
     </main>
   );
 }
