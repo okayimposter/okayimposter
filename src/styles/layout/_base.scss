@@ -1,0 +1,13 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: $light;
+  color: $dark;
+  font-family: $base-body-type;
+}

@@ -1,0 +1,74 @@
+$header-label-width: 14rem;
+
+@mixin structured-list-cell {
+  display: inline-block;
+  max-width: 20rem;
+  width: 100%;
+  text-transform: capitalize;
+  padding-right: 2rem;
+}
+
+.oi-structured-list {
+  margin: $base-spacing-unit * 2 0;
+  
+  &-header {
+    padding: .5rem 1rem .5rem 5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    
+    &-label {
+      &-name {
+        @include structured-list-cell();
+      }
+      
+      &-company {
+        @include structured-list-cell();
+      }
+      
+      &-role {
+        @include structured-list-cell();
+      }
+      
+      &-time {
+        @include structured-list-cell();
+      }
+    }
+  }
+  
+  &-row {
+    border-top: 1px solid $gray;
+    border-bottom: none;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    
+    &:last-child {
+      border-bottom: 1px solid $gray;
+    }
+    
+    &-data {
+      &-name {
+        @include structured-list-cell();
+      }
+      
+      &-company {
+        @include structured-list-cell();
+      }
+      
+      &-role {
+        @include structured-list-cell();
+      }
+      
+      &-img {
+        max-width: $base-spacing-unit * 3;
+        margin-right: $base-spacing-unit;
+        border-radius: 50%;
+      }
+      
+      &-time {
+        @include structured-list-cell();
+      }
+    }
+  }
+}
